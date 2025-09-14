@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Twinkling Marketing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      font-family: 'Inter', sans-serif; 
+      margin: 0;
+      padding:0;
+      overflow-x: hidden;
+    }
+    .text-gradient { 
+      background: linear-gradient(135deg, #3b82f6, #10b981);
+      background-clip: text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+    }
+    .btn-gradient { background: linear-gradient(90deg,#10b981,#3b82f6); color: #fff; font-weight: 600; }
+    .card-glow { box-shadow: 0 10px 30px rgba(59,130,246,0.2); border-radius: 1rem; }
+    .badge-gradient { 
+      background: linear-gradient(90deg,#3b82f6,#10b981); 
+      color: #fff; 
+      font-weight: 600; 
+      padding: 0.5rem 1rem; 
+      border-radius: 1rem; 
+    }
+    .hero-contact{
+      background:linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .contact-container{
+      margin-top: 50px;
+    }
+    
+        .nav-left{
+      display: flex;
+      align-items: center;
+    }
+
+    .logo{
+      height : 50px;
+      width : auto;
+      margin-right : 10px;
+      border-radius: 10px;
+    }
+
+    .brand-name{
+      font-size: 20px;
+      font-weight : bold;
+    }
+
+    @media(max-width : 600px){
+  .logo{
+    height : 30px;
+  }
+
+  .brand-name{
+    font-size : 20px;
+  }
+}
+
+  .btn-gradient {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+  }
+  .btn-gradient:hover {
+    opacity: 0.9;
+  }
+      .text-gradient {
+      background: linear-gradient(135deg, #3b82f6, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-electric-blue {
+      color: hsl(220, 90%, 50%);
+    }
+    footer {
+      background-color: #111827; /* gray-900 equivalent */
+      color: white;
+      padding : 40px 0;
+    }
+    footer a {
+      color: #9ca3af; /* gray-400 */
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover {
+      color: white;
+    }
+    .icon-box {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(to right, #3b82f6, #22c55e);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white border-bottom">
+  <div class="container">
+    <!-- Logo -->
+    <div class="nav-left">
+        <img src = "./images/Group.svg" alt = "logo" class = "logo">
+        <span class="text-gradient brand-name">Twinkling Marketing</span>
+      </div>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i data-feather="menu"></i></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link text-secondary">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link text-secondary">Services</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link text-secondary">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link active text-primary">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-primary fw-semibold">
+            Book Consultation
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center bg-light hero-contact">
+    <div class="container contact-container">
+      <span class="badge-gradient mb-3 d-inline-block">Let's Connect</span>
+      <h1 class="display-4 fw-bold">Let's Grow Your Brand <span class="text-gradient">Together</span></h1>
+      <p class="lead text-muted mt-3">Ready to take your marketing to the next level? Get in touch with our team of experts and discover how we can help accelerate your business growth.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">Get Your Free Consultation</h2>
+          <p class="text-muted mb-10">Fill out the form below and we'll get back to you within 24 hours with a customized marketing strategy for your business.</p>
+
+          <div class="card card-glow p-4">
+            <div id = "successpopover" class = "alert alert-success mt-3 text-center" style = "display:none;">
+              Your message has been sent successfully!
+            </div>
+            <form id = "contactForm">
+              <input type = "hidden" name = "access_key" value = "e01e7cc4-579c-43a6-a9e1-c56f273c6870">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName"  class="form-label">First Name *</label>
+                  <input type="text" name = "first_name" class="form-control rounded-3" placeholder="John" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input type="text" name = "last_name" class="form-control rounded-3" id="lastName" placeholder = "Doe" required>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" name = "email" class="form-control rounded-3" id="email" placeholder = "email" required>
+              </div>
+
+              <div class="mt-3">
+                <label for="company" class="form-label">Company Name</label>
+                <input type="text" name = "company" class="form-control" placeholder = "company name" rounded-3">
+              </div>
+
+              <div class="mt-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" name = "phone" placeholder = "Phone" class="form-control rounded-3">
+              </div>
+
+              <div class="mt-3">
+                <label class="form-label">Services Interested In</label>
+                <div class="row g-2">
+                  <div class="col-6"><input type="checkbox" name = "services" value="Seo Optimization"> SEO Optimization</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Social Media Marketing"> Social Media Marketing</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Paid Advertising"> Paid Advertising</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Brand Strategy & Design"> Brand Strategy & Design</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Content Marketing"> Content Marketing</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Email Marketing"> Email Marketing</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Analytics & Reporting"> Analytics & Reporting</div>
+                  <div class="col-6"><input type="checkbox" name = "services" value = "Conversion Optimization"> Conversion Optimization</div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label for="message" class="form-label">Tell us about your project *</label>
+                <textarea class="form-control rounded-3" name = "Message" rows="4" placeholder="Describe your business goals..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gradient mt-3 w-100">Send Message & Get Free Consultation</button>
+              <p class="text-center text-muted mt-2" style="font-size:0.85rem;">By submitting this form, you agree to our Privacy Policy and Terms of Service.</p>
+            </form>
+            
+          </div>
+        </div>
+        <!-- Contact Information -->
+        <div class="col-lg-6">
+          <h2 class="fw-bold mt-1 mb-4">Get in Touch</h2>
+          <p class="text-muted mb-3">Choose the best way to reach us. We're here to help you succeed.</p>
+
+          <div class="card card-glow p-3 mb-3">
+            <div class="d-flex align-items-center">
+              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient">
+                 <img src="./images/mail.svg">
+              </div>
+              <div>
+                <h5>Email Us</h5>
+                <p class="mb-0 text-primary"></p>
+                <small class="text-muted">We reply within 24 hours</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-glow p-3 mb-3">
+            <div class="d-flex align-items-center">
+              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="./images/linkedin.svg"></div>
+              <div>
+                <h5>Linkedin</h5>
+                <a href = "#" style="text-decoration: none;"><p class="mb-0 text-primary">Twinkling Marketing</p></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-glow p-3 mb-3">
+            <div class="d-flex align-items-center">
+              <div class="me-3 bg-primary text-white rounded-3 p-3 btn-gradient"><img src="./images/instagram.svg"></div>
+              <div>
+                <h5>Instagram</h5>
+                <a href = "#" style="text-decoration: none;"><p class="mb-0 text-primary">Twinkling</p></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional info cards like WhatsApp, Visit Us can be added similarly -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-dark">
+    <div class="container bg-dark">
+      <div class="row g-4">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class = "nav-left">
+            <img src = "./images/Group.svg" alt = "Logo" class = "logo">
+            <span class = "text-gradient brand-name">Twinkling Marketing</span>
+          </div> 
+          <p class="text-secondary small">
+            We turn clicks into customers with data-driven marketing strategies that deliver real results for your business.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
+            <a href="https://www.linkedin.com/company/twinkling-marketing"><img src="./images/linkedin.svg" class="img-fluid" alt="LinkedIn" style="width:24px;"></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-secondary text-decoration-none">About</a></li>
+            <li><a href="services.html" class="text-secondary text-decoration-none">Services</a></li>
+            <li><a href="portfolio.html" class="text-secondary text-decoration-none">Portfolio</a></li>
+            <li><a href="#contact" class="text-secondary text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none">SEO Optimization</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Social Media Marketing</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Paid Advertising</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Brand Strategy</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Content Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Get in Touch</h5>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <img src="./images/mail.svg" class="me-2 img-fluid" style="width:20px;" alt="Mail">
+              <span class="text-secondary small">info@twinklingmarketing.com</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <img src="./images/map-pin.svg" class="me-2 img-fluid" style="width:20px;" alt="Location">
+              <span class="text-secondary small">Austin, Texas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-top border-secondary mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+        <p class="text-secondary small mb-2 mb-md-0">© 2025 Twinkling Marketing. All rights reserved.</p>
+        <div class="d-flex gap-3 flex-wrap mb-3">
+          <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none small">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<script>
+const form = document.getElementById("contactForm");
+const successPopover = document.getElementById("successpopover");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = {};
+
+  // Convert FormData to JSON and handle multiple checkboxes
+  formData.forEach((value, key) => {
+    if (data[key]) {
+      if (Array.isArray(data[key])) {
+        data[key].push(value);
+      } else {
+        data[key] = [data[key], value];
+      }
+    } else {
+      data[key] = value;
+    }
+  });
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    // Show success popover immediately after fetch succeeds
+    successPopover.style.display = "block";
+
+    // Reset the form
+    form.reset();
+
+    // Hide the popover after 4 seconds
+    setTimeout(() => {
+      successPopover.style.display = "none";
+    }, 4000);
+
+  } catch (err) {
+    alert("Something went wrong! Try again.");
+    console.error(err);
+  }
+});
+</script>
+
+ 
+<script>
+  feather.replace();
+
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    // Toggle icon
+    const icon = btn.querySelector('i');
+    icon.dataset.feather = menu.classList.contains('hidden') ? 'menu' : 'x';
+    feather.replace();
+  });
+</script>  
+</body>
+</html>

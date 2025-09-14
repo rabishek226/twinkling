@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Twinkling Marketing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    html{
+      margin:0;
+      padding:0;
+      overflow-x:hidden;
+    }
+    body { 
+      margin:0;
+      padding:0;
+      overflow-x: hidden;
+      font-family: 'Inter', 
+      sans-serif; 
+    }
+    .portfolio-hero{
+      padding: 80px 0;
+    }
+    .portfolio-container{
+      margin-top : 100px;
+    }
+    .text-gradient { 
+      background: linear-gradient(135deg,#3b82f6,#10b981); 
+      background-clip : text;
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+    }
+    .btn-color-cta{
+      background-color: #47eb47;
+    }
+    .btn-color{
+      background-color : blue;
+      color : white;
+    }
+    .card-glow { 
+      box-shadow: 0 10px 30px rgba(59,130,246,0.2); 
+      border-radius: 1rem; 
+    }
+    .portfolio-hero{
+      background: linear-gradient(to bottom right, #ffffff, #e0f7ff, #e0ffe0);
+      padding : 80px 0;
+    }
+    .stats-section{
+      padding : 80px 0;
+    }
+    .btn-gradient{
+      background: linear-gradient(135deg,#3b82f6,#10b981); 
+    }
+.nav-left{
+      display: flex;
+      align-items: center;
+    }
+
+    .logo{
+      height : 50px;
+      width : auto;
+      margin-right : 10px;
+      border-radius : 10px;
+    }
+
+    .brand-name{
+      font-size: 20px;
+      font-weight : bold;
+    }
+
+    @media(max-width : 600px){
+  .logo{
+    height : 30px;
+  }
+
+  .brand-name{
+    font-size : 20px;
+  }
+}
+
+  .text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    background-clip : text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn-gradient {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: opacity 0.3s;
+  }
+  .btn-gradient:hover {
+    opacity: 0.9;
+  }
+      .text-gradient {
+      background: linear-gradient(135deg, #3b82f6, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-electric-blue {
+      color: hsl(220, 90%, 50%);
+    }
+    footer {
+      background-color: #111827; /* gray-900 equivalent */
+      color: white;
+      padding : 40px 0;
+    }
+    footer a {
+      color: #9ca3af; /* gray-400 */
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover {
+      color: white;
+    }
+    .icon-box {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(to right, #3b82f6, #22c55e);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-white border-bottom">
+  <div class="container">
+    <!-- Logo -->
+    <div class="nav-left">
+        <img src = "./images/Group.svg" alt = "logo" class = "logo">
+        <span class="text-gradient brand-name">Twinkling Marketing</span>
+      </div>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i data-feather="menu"></i></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a href="index.html" class="nav-link text-secondary">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link text-secondary">About</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link text-secondary">Services</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link active text-primary">Portfolio</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-primary fw-semibold" onclick = "window.location.href = 'contact.html'">
+            Book Consultation
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 text-center portfolio-hero">
+    <div class="container portfolio-container">
+      <h1 class="display-4 fw-bold">Our <span class="text-gradient">Success Stories</span></h1>
+      <p class="lead text-muted mt-3">
+        Real results from real businesses. See how we've helped companies across various industries achieve their digital marketing goals and drive sustainable growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="py-5">
+    <div class="container">
+      
+      <!-- Example Case Study -->
+      <div class="card card-glow mb-5">
+        <div class="card-header btn-gradient p-3 text-center">
+          <span class="badge badge-light fs-5">⭐ Featured Case Study</span>
+        </div>
+        <div class="card-body p-4 p-lg-5">
+          <div class="row g-4">
+            <!-- Case Study Info -->
+            <div class="col-lg-6">
+              <h3 class="fw-bold">Tikka2Taco</h3>
+              <span class="badge bg-primary mb-2">Lifestyle </span>
+              <div class="mb-3">
+                <span class="badge bg-secondary me-1">SEO</span>
+                <span class="badge bg-secondary me-1">Content Creation</span>
+                <span class = "badge bg-secondary me-1">Content Marketing</span>
+                <span class="badge bg-secondary">Social Media Strategy</span>
+              </div>
+              <p><strong>Challenge:</strong> In the beginning, Tikka2Taco struggled with visibility and audience reach. Despite consistent posting, the content wasn't generating enough views or engagement to drive meaningful growth.</p>
+              <p><strong>Solution:</strong> We implemented a comprehensive SEO strategy, optimized content marketing, and social media strategies tailored to the target audience. Along with this, we leveraged Meta Ads campaign to boost visibility and engagement.</p>
+              <p><strong>Timeline:</strong> <span class="text-primary fw-semibold">6 months</span></p>
+
+              <!-- Testimonial -->
+              <div class="bg-light rounded-3 p-3 mt-3">
+                <p class="mb-1">"Twinkling Marketing transformed our online presence. The results exceeded our expectations."</p>
+                <p class="fw-semibold mb-0">Tikka2Taco, Manager</p>
+              </div>
+            </div>
+
+            <!-- Results -->
+            <div class="col-lg-6">
+              <h5 class="fw-bold mb-3">Results Achieved:</h5>
+              <div class="row g-3">
+                <div class="col-12">
+                  <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-3">
+                    <div>Organic Traffic</div>
+                    <div class="fw-bold text-primary">+95%</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-3">
+                    <div>Engagement</div>
+                    <div class="fw-bold text-primary">+90%</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Repeat other case studies similarly -->
+      
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-5 stats-section">
+    <div class="container text-center stats-container">
+      <h2 class="display-5 fw-bold mb-10">Results That <span class="text-gradient">Speak</span></h2>
+      <div class="row g-4 mt-4 justify-content-between">
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-primary mt-3">300%</h3>
+          <p>Average ROI Increase</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-primary mt-3">95%</h3>
+          <p>Client Retention Rate</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="fw-bold text-primary mt-3">24/7</h3>
+          <p>Support Available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 text-center stats-section" style="background: linear-gradient(90deg,#3b82f6,#10b981); color: #fff;">
+    <div class="container stats-container">
+      <h2 class="display-5 fw-bold mb-3">Ready to Become Our Next Success Story?</h2>
+      <p class="mb-4">Let's discuss how we can help you achieve similar results for your business.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <button class="btn btn-outline-light px-4 py-2" onclick ="window.location.href='contact.html'">Schedule Consultation</button>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-dark">
+    <div class="container bg-dark">
+      <div class="row g-4">
+        <!-- Company Info -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class = "nav-left">
+            <img src = "/images/Group.svg" alt = "Logo" class = "logo">
+            <span class = "text-gradient brand-name">Twinkling Marketing</span>
+          </div> 
+          <p class="text-secondary small">
+            We turn clicks into customers with data-driven marketing strategies that deliver real results for your business.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="https://www.instagram.com/twinkling_marketing/"><img src="./images/instagram.svg" class="img-fluid" alt="Instagram" style="width:24px;"></a>
+            <a href="https://www.linkedin.com/company/twinkling-marketing"><img src="./images/linkedin.svg" class="img-fluid" alt="LinkedIn" style="width:24px;"></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-secondary text-decoration-none">About</a></li>
+            <li><a href="services.html" class="text-secondary text-decoration-none">Services</a></li>
+            <li><a href="#portfolio" class="text-secondary text-decoration-none">Portfolio</a></li>
+            <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Services</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none">SEO Optimization</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Social Media Marketing</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Paid Advertising</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Brand Strategy</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Content Marketing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h5 class="fw-semibold mb-3">Get in Touch</h5>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center mb-2">
+              <img src="./images/mail.svg" class="me-2 img-fluid" style="width:20px;" alt="Mail">
+              <span class="text-secondary small">info@twinklingmarketing.com</span>
+            </li>
+            <li class="d-flex align-items-center">
+              <img src="./images/map-pin.svg" class="me-2 img-fluid" style="width:20px;" alt="Location">
+              <span class="text-secondary small">Austin, Texas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-top border-secondary mt-4 pt-3 d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+        <p class="text-secondary small mb-2 mb-md-0">© 2025 Twinkling Marketing. All rights reserved.</p>
+        <div class="d-flex gap-3 flex-wrap mb-3">
+          <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none small">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none small">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    // Toggle icon
+    const icon = btn.querySelector('i');
+    icon.dataset.feather = menu.classList.contains('hidden') ? 'menu' : 'x';
+    feather.replace();
+  });
+</script>  
+</body>
+</html>
