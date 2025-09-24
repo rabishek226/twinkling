@@ -40,9 +40,9 @@ body, html {
   font-weight:bold;
 }
 
-@media(max-width : 600px){
+@media(max-width : 700px){
   .logo{
-    height : 30px;
+    height : 50px;
   }
 
   .brand-name{
@@ -203,6 +203,7 @@ body, html {
       justify-content: center;
 
     }
+
 
 
 
