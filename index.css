@@ -1,18 +1,50 @@
+/* ===== BRAND COLOR OVERRIDES ===== */
 :root {
   --orange: #EA580C;
   --orange-hover: #D9480F;
-
   --teal: #0F766E;
   --teal-hover: #115E59;
-
   --text: #374151;
-
   --white: #FFFFFF;
   --soft-white: #FAFAFA;
   --mint: #ECFEFF;
-
-  --border: #E5E7EB;
 }
+
+/* Force override Bootstrap */
+body {
+  background-color: var(--soft-white) !important;
+  color: var(--text) !important;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--teal) !important;
+}
+
+/* Buttons */
+.btn,
+.btn-primary {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+  color: var(--white) !important;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: var(--orange-hover) !important;
+  border-color: var(--orange-hover) !important;
+}
+
+/* Secondary buttons */
+.btn-outline-primary {
+  color: var(--orange) !important;
+  border-color: var(--orange) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--orange) !important;
+  color: var(--white) !important;
+}
+
 
 /* Reset & Base */
 body, html {
@@ -113,13 +145,14 @@ h1, h2, h3, h4 {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to bottom right, var(--white), var(--mint), var(--soft-white));
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 3rem 1rem;
-  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--white),
+    var(--mint),
+    var(--soft-white)
+  ) !important;
 }
+
 
 .hero-title{
   font-weight: 900;
@@ -149,9 +182,8 @@ h1, h2, h3, h4 {
 
 /* CTA Section */
 .cta-section {
-  background-color: var(--teal);
-  color: var(--white);
-  padding: 80px 0;
+  background-color: var(--teal) !important;
+  color: var(--white) !important;
 }
 
 .container-section{
@@ -241,6 +273,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
