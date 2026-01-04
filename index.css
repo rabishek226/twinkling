@@ -19,6 +19,9 @@ body, html {
   background: var(--soft-white);
   color: var(--text);
 }
+h1, h2, h3, h4 {
+  color: var(--teal);
+}
 
 /* Text Gradient */
 .text-gradient {
@@ -73,13 +76,14 @@ body, html {
   transition: opacity 0.3s, transform 0.3s;
 }
 .btn-gradient {
-  background: linear-gradient(90deg, var(--teal), var(--charcoal));
+  background-color: var(--orange);
   color: var(--white);
   border-radius: 0.5rem;
-  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
 }
+
 .btn-gradient:hover {
-  opacity: 0.95;
+  background-color: var(--orange-hover);
   transform: scale(1.03);
 }
 
@@ -89,19 +93,21 @@ body, html {
 }
 
 .btn-electric {
-  background-color: var(--teal);
+  background-color: var(--orange);
   color: var(--white);
-  box-shadow: 0 10px 30px -5px var(--teal-glow);
+  box-shadow: 0 10px 30px -5px rgba(234, 88, 12, 0.3);
   transition: transform 0.3s, background-color 0.3s;
 }
+
 .btn-electric:hover {
-  background-color: var(--teal-hover);
+  background-color: var(--orange-hover);
   transform: scale(1.03);
 }
 
+
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to bottom right, var(--white), #F3F7F7, var(--soft-white));
+  background: linear-gradient(to bottom right, var(--white), var(--mint), var(--soft-white));
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -125,19 +131,19 @@ body, html {
 
 /* Cards */
 .card-glow {
-  border: 1px solid rgba(0, 71, 71, 0.18);
-  box-shadow: 0 10px 30px -5px var(--teal-glow);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card-glow:hover {
-  transform: scale(1.03);
-  box-shadow: 0 14px 36px -10px rgba(0, 71, 71, 0.30);
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  box-shadow: 0 10px 30px -5px rgba(15, 118, 110, 0.15);
+  transition: transform 0.3s;
 }
 
+.card-glow:hover {
+  transform: scale(1.03);
+}
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--charcoal), var(--teal));
+  background-color: var(--teal);
   color: var(--white);
   padding: 80px 0;
 }
@@ -220,15 +226,17 @@ body, html {
     footer a:hover {
       color: white;
     }
- .icon-box {
+.icon-box {
   width: 32px;
   height: 32px;
-  background: linear-gradient(to right, var(--teal), var(--charcoal));
+  background-color: var(--orange);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 
 
 
