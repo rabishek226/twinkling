@@ -1,15 +1,18 @@
 :root {
   --orange: #EA580C;
   --orange-hover: #D9480F;
+
   --teal: #0F766E;
   --teal-hover: #115E59;
+
   --text: #374151;
+
   --white: #FFFFFF;
   --soft-white: #FAFAFA;
   --mint: #ECFEFF;
+
   --border: #E5E7EB;
 }
-
 
 /* Reset & Base */
 body, html {
@@ -105,6 +108,7 @@ h1, h2, h3, h4 {
   background-color: var(--orange-hover);
   transform: scale(1.03);
 }
+
 
 
 /* Hero Section */
@@ -237,6 +241,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
