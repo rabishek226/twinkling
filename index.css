@@ -1,14 +1,15 @@
-:root{
-  --teal: #004747;
-  --teal-hover: #0A5F5F;
-  --charcoal: #111827;
+:root {
+  --orange: #EA580C;
+  --orange-hover: #D9480F;
+  --teal: #0F766E;
+  --teal-hover: #115E59;
+  --text: #374151;
   --white: #FFFFFF;
   --soft-white: #FAFAFA;
-  --text: #374151;
-  --muted: #6B7280;
+  --mint: #ECFEFF;
   --border: #E5E7EB;
-  --teal-glow: rgba(0, 71, 71, 0.25);
 }
+
 
 /* Reset & Base */
 body, html {
@@ -86,6 +87,7 @@ h1, h2, h3, h4 {
   background-color: var(--orange-hover);
   transform: scale(1.03);
 }
+
 
 .btn-cta{
   background-color: var(--teal);
@@ -235,6 +237,7 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
 }
+
 
 
 
